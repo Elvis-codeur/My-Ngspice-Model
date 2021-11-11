@@ -1,0 +1,12 @@
+
+.subckt transfo 1 2 3 4
+* 1 Entree 1
+* 2: Entree 2
+* 3 Entree 3
+* 4 Entre 4
+R1 1 5 0
+L1 5 2 2
+R2 6 3 0
+L2 6 4 {(220/12)*40}
+k1 L1 L2 0.999
+.ends transfo
